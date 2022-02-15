@@ -1,38 +1,184 @@
-.App {
+:root {
+  --primary-color: #f9a826;
+  --hover-color: #ec960c;
+  --dark-color: #21252f;
+  --body-color: #888;
+  --box-shadow: 0 8px 22px rgba(0, 0, 0, 0.363);
+}
+/* *********** Navbar start *********** */
+.navbar-brand {
+  height: 45px;
+  width: 90px;
+  background-color: #f9a826;
+  font-weight: 700;
+  font-size: x-large;
+  color: #fff !important;
+  letter-spacing: 2px;
+  border-radius: 0px 30px 0px 30px;
   text-align: center;
+  transition: 0.5s;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-brand:hover {
+  background-color: var(--hover-color);
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media only screen and (max-width: 992px) {
+  .navbar-nav {
+    align-items: center;
+  }
+  .download-btn {
+    display: none;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-item {
+  padding-right: 20px;
+  font-size: medium;
+  text-transform: uppercase;
+}
+
+.nav-link {
+  color: var(--dark-color) !important;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: #f9a826 !important;
+}
+
+.download {
+  height: 40px;
+  width: 150px;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: 600;
+  font-size: large;
+  background-color: #f9a826;
+  letter-spacing: 1px;
+  /* box-shadow: 0px 2px 4px rgb(0,0,0,0.3);  */
+  transition: 0.5s;
+}
+.download:hover {
+  background-color: var(--hover-color);
+  cursor: pointer;
+}
+/* *********** Navbar end *********** */
+
+/* ******* main text and svg start ********* */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.display-4 {
+  color: var(--dark-color);
+  font-weight: 700;
+}
+.background {
+  background: linear-gradient(
+      to top right,
+      rgba(39, 37, 33, 0.637) 50%,
+      rgba(36, 34, 31, 0.76)
+    ),
+    url(../src/component/images/background2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.button {
+  height: 40px;
+  width: 150px;
+  outline: none;
+  border: none;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+.btn-1 {
+  background-color: var(--primary-color);
+  font-size: large;
+}
+.btn-1:hover {
+  background-color: var(--hover-color);
+}
+.btn-2 {
+  background: transparent;
+  border: 3px solid var(--primary-color);
+  outline: none;
+}
+.btn-2:hover {
+  background-color: var(--primary-color);
+}
+
+/* ******* main text and svg end ********* */
+
+/* ********* services section  ******* */
+section {
+  /* padding-top: 120px; */
+  padding-bottom: 30px;
+}
+h4 {
+  color: var(--primary-color);
+}
+p {
+  color: var(--dark-color);
+}
+.card-box {
+  background-color: #fff;
+  border: 3px solid var(--primary-color);
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: var(--box-shadow);
+  transition: all 0.35s ease;
+}
+.card-box:hover {
+  transform: translateY(5px);
+}
+.icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 100px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 30px;
 }
+/* services section end  */
 
-.App-link {
-  color: #61dafb;
+/* features section start  */
+.active-item {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  text-align: center;
+  font-size: large;
+  font-weight: 700;
 }
+/* features section end  */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* pricing table start  */
+.card-body {
+  border: 3px solid var(--primary-color);
+  box-shadow: var(--box-shadow);
+  transition: all 0.35s ease;
 }
+.card-body:hover {
+  transform: translateY(5px);
+}
+ul {
+  color: var(--dark-color);
+}
+.btn {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.btn:hover {
+  background-color: var(--hover-color);
+  color: #fff;
+}
+/* pricing table end  */
