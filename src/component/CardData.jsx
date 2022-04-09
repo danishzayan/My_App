@@ -2,6 +2,7 @@ const CardData = [
   {
     title: 'Android App',
     quotes: 'Noting to say osama',
+    icon: 'bi-briefcase-fill'
   },
   {
     title: 'Windows App',

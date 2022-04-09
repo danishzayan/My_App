@@ -22,7 +22,12 @@ const Service = () => {
 
           <div className="row g-4 mt-3">
             {CardData.map((val, ind) => {
-              return <Card key={ind} title={val.title} quotes={val.quotes} />;
+              return <Card 
+                      key={ind} 
+                      title={val.title} 
+                      quotes={val.quotes} 
+                      icon={val.con}       
+                      />;
             })}
           </div>
         </div>
